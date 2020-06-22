@@ -1,9 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Averta-Regular', sans-serif;
+}
+
+.title {
+    font-size: 3em;
+    line-height: 1.1em;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.67);
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin: 0 0 50px 0;
+    color: rgba(0, 0, 0, 0.67);
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.subsubtitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-size: 2em;
+    color: #f5d2d3;
+    line-height: 60px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    margin: 20px 0 0 0;
+}
+
+.body-text {
+    font-size: 15px;
+    line-height: 29px !important;
+}
+
+table hr {
+    background: rgba(0, 0, 0, 0.37);
+    border: none;
+    height: 1px;
+    width: 50px;
+    margin: 20px 0;
+}
+
+.btn {
+    margin: 0;
+    display: inline-block;
+    background: #f5d2d3;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.57);
+    transition: .1s ease-in-out;
+    padding: 20px 0;
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Averta-Bold', sans-serif;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: #e79396;
 }
 
 body {
@@ -39,8 +107,8 @@ body {
 
 .fa-times {
     position: absolute;
-    left: 28px;
-    top: 28px;
+    left: 30px;
+    top: 30px;
     color: #fff;
 }
 
@@ -91,8 +159,8 @@ body {
 
 .fa-bars {
     position: absolute;
-    left: 28px;
-    top: 28px;
+    left: 30px;
+    top: 30px;
     color: rgba(0, 0, 0, 0.67);
 }
 
@@ -109,52 +177,18 @@ body {
     z-index: 99;
     width: 100%;
     text-align: center;
+    margin: 0 auto;
 }
 
-.hero-content h1 {
-    font-size: 4em;
-    line-height: 1.1em;
-    margin: 0;
-    color: rgba(0, 0, 0, 0.67);
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 2px;
-}
-
-.hero-content hr {
-    margin: 30px 0;
+.hero hr {
+    margin: 30px auto;
     width: 200px;
-}
-
-.hero-content p {
-    font-size: 1em;
-    line-height: 1.6em;
-    margin: 0 0 50px 0;
-    color: rgba(0, 0, 0, 0.67);
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.hero-content a {
-    margin: 0;
-    display: inline-block;
-    background: #f5d2d3;
     border: none;
-    border-radius: 4px;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.57);
-    transition: .1s ease-in-out;
-    padding: 20px 0;
-    width: 80%;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: 'Averta-Bold', sans-serif;
-    letter-spacing: 1px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.37);
 }
 
-.hero-content a:hover {
-    background-color: #e79396;
-}
+
 
 .services {
     text-align: center;
@@ -190,125 +224,63 @@ body {
     width: 100%;
 }
 
-body.thingstoknow .hero,
-body.pricelist .hero {
-    padding: 70px 0;
+section.thingstoknow ol li {
+    line-height: 29px;
 }
 
-,
-body.treatment .hero {
-    padding: 100px 0;
+section.thingstoknow ol li,
+section.thingstoknow ol li a {
+    color: rgba(0, 0, 0, 0.67);
 }
 
-body.thingstoknow .hero p,
-body.pricelist .hero p,
-body.lashes .hero p {
-    margin: 0;
-}
-
-.things table td {
-    padding: 30px 0;
-    vertical-align: top;
+section.thingstoknow table {
     width: 100%;
 }
 
-.things table span {
-    font-family: 'Interstate-BlackItalic';
-    font-weight: normal;
-    font-size: 1.5em;
-    color: #cf6a87;
-    line-height: 1.6em;
-}
-
-.things table td {
-    font-family: 'Inter', sans-serif;
-    font-size: 17px;
-    line-height: 26px;
+section.thingstoknow table td {
     width: 100%;
     float: left;
-    color: #fff;
 }
 
-.prices table {
-    width: 100%;
-
+section.thingstoknow table td li {
+    line-height: 29px;
 }
-
-body.lashes .hero {
-    background-image: url(../img/lashes_header.jpg);
-}
-
-body.brows .hero {
-    background-image: url(../img/brows_header.jpg);
-}
-
-body.nails .hero {
-    background-image: url(../img/nails_header.jpg);
-}
-
-body.facial .hero {
-    background-image: url(../img/facial_header.jpg);
-}
-
-body.massage .hero {
-    background-image: url(../img/massage_header.jpg);
-}
-
-body.tanning .hero {
-    background-image: url(../img/lashes_header.jpg);
-}
-
-body.waxing .hero {
-    background-image: url(../img/lashes_header.jpg);
-}
-
-body.hair .hero {
-    background-image: url(../img/hair_header.jpg);
-}
-
-.treatment-btn {
-    text-align: center;
-    width: 96%;
-    max-width: 300px;
-    background: white;
-    display: block;
-    margin: 40px auto;
-    background: #fff;
-    border: none;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.67);
-    transition: .2s ease-in-out;
-    padding: 20px 0;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-family: 'Interstate-BlackItalic';
-    -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.4);
-}
-
-section.treatment p {
-    color: white;
-    font-size: 1em;
-    line-height: 1.6em;
-    margin: 0 auto;
-}
-
-section.treatment p span {
-    font-weight: normal;
-    font-size: 1.5em;
-    color: #cf6a87;
-}
-
-body.treatment .hero h1 {
-    color: white;
-    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.6);
-}
-
 
 @media screen and (min-width: 728px) {
     body {
         background: #fff;
+    }
+
+    .title {
+        font-size: 4em;
+        line-height: 1.1em;
+        margin: 0;
+        color: rgba(0, 0, 0, 0.67);
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 2px;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(180deg, rgba(2, 0, 36, 0) 64%, rgba(245, 210, 211, 1) 64%);
+        display: inline;
+    }
+
+    .subtitle {
+        font-size: 1.6em;
+        line-height: 1.6em;
+        margin: 0 0 50px 0;
+        color: rgba(0, 0, 0, 0.67);
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .subsubtitle {
+        font-family: 'Playfair Display', serif;
+        font-weight: normal;
+        font-size: 2em;
+        color: #f5d2d3;
+        line-height: 60px;
+        text-transform: lowercase;
+        letter-spacing: 1px;
     }
 
     .hide-on-mobile {
@@ -432,21 +404,14 @@ body.treatment .hero h1 {
     .hero {
         width: 100%;
         padding: 200px 0;
-        text-align: left !important;
     }
 
     .hero-content {
         max-width: 600px;
-        text-align: left;
     }
 
     .hero h1 {
-        font-size: 4em;
         width: 100%;
-    }
-
-    .hero p {
-        font-size: 1.6em;
     }
 
 
@@ -465,123 +430,24 @@ body.treatment .hero h1 {
         float: left;
     }
 
-    .thingstoknow .hero {
-        padding: 80px 0;
-    }
 
-    .thingstoknow .hero p {
-        margin: 0;
-    }
 
-    .things table td {
-        padding: 30px 0;
-        vertical-align: top;
-    }
-
-    .things table span {
-        font-family: 'Interstate-BlackItalic';
-        font-weight: normal;
-        font-size: 2em;
-        color: #cf6a87;
-        line-height: 60px;
-    }
-
-    .things table td {
-        font-family: 'Inter', sans-serif;
-        font-size: 17px;
-        line-height: 26px;
-        width: 48%;
-        float: left;
-    }
-
-    .things table td:nth-child(2) {
-        width: 48%;
-        float: right;
-    }
-
-    .prices table {
+    section.thingstoknow table {
         width: 100%;
-        display: table;
-        padding: 0;
-
     }
 
-    .prices table:nth-child(1) {
-        margin-top: 40px;
-    }
-
-
-    .prices table table td {
-        min-height: 40px;
-        line-height: 50px;
-        border-bottom: 2px dotted rgba(255, 255, 255, 0.3);
-        font-size: 1.1em;
-        font-weight: 400;
-        color: #fff;
-        text-transform: capitalize;
-    }
-
-    .prices table table td:nth-child(1) {
-        float: left;
-        width: 80%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .prices table table td:nth-child(2) {
-        float: right;
-        width: 20%;
-        margin: 0;
-        padding: 0;
-        text-align: right;
-    }
-
-    .prices table td {
+    section.thingstoknow table td {
         width: 48%;
         float: left;
-        padding: 0;
-
     }
 
-    .prices table td:nth-child(2) {
+    section.thingstoknow table td:nth-child(2) {
         width: 48%;
         float: right;
-        padding: 0;
     }
 
-    .prices table td h1 {
-        margin: 0;
-        padding: 0;
-        color: #fff;
-        margin-bottom: 10px;
-        font-family: 'Interstate-BlackItalic';
-        font-weight: normal;
-        font-size: 2em;
-        color: #cf6a87;
-        margin-top: 70px;
+    section.thingstoknow table span {
+        float: right;
     }
 
-    .prices table td h1:nth-child(1) {
-        margin-top: 0;
-    }
-
-    td.special {
-        line-height: 1.4em !important;
-        border: none !important;
-    }
-
-    td.special span {
-        font-size: 13px;
-        text-transform: none;
-    }
-
-    body.treatment .hero h1 {
-        color: white;
-        text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.6);
-    }
-
-    section.treatment p {
-        max-width: 700px;
-        margin-top: 30px;
-    }
 }
