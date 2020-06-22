@@ -1,33 +1,19 @@
 @font-face {
-    font-family: 'Interstate-Regular';
-    src: url('Interstate-Regular.eot');
-    src: local('Interstate Regular'), local('Interstate-Regular'),
-        url('Interstate-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Interstate-Regular.woff') format('woff'),
-        url('Interstate-Regular.ttf') format('truetype');
+    font-family: 'Averta-Bold';
+    src: local('Averta-Bold'),
+        url('Averta-Bold.woff') format('woff'),
+        url('Averta-Bold.ttf') format('truetype'),
+        url('Averta-Bold.svg#Averta-Bold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Interstate-BlackItalic';
-    src: url('Interstate-BlackItalic.eot');
-    src: local('Interstate-BlackItalic'),
-        url('Interstate-BlackItalic.eot?#iefix') format('embedded-opentype'),
-        url('Interstate-BlackItalic.woff') format('woff'),
-        url('Interstate-BlackItalic.ttf') format('truetype');
+    font-family: 'Averta-Regular';
+    src: local('Averta-Regular'),
+        url('Averta-Regular.woff') format('woff'),
+        url('Averta-Regular.ttf') format('truetype'),
+        url('Averta-Regular.svg#Averta-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Interstate-RegularItalic';
-    src: url('Interstate-RegularItalic.eot');
-    src: local('Interstate Regular Italic'), local('Interstate-RegularItalic'),
-        url('Interstate-RegularItalic.eot?#iefix') format('embedded-opentype'),
-        url('Interstate-RegularItalic.woff') format('woff'),
-        url('Interstate-RegularItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
