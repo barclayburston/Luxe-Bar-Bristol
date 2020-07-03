@@ -17,3 +17,32 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'BrandonGrotesque-Regular';
+    src: url('BrandonGrotesque-Regular.eot');
+    src: url('BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BrandonGrotesque-Regular.woff') format('woff'),
+        url('BrandonGrotesque-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Medium';
+    src: url('BrandonGrotesque-Medium.eot');
+    src: url('BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BrandonGrotesque-Medium.woff') format('woff'),
+        url('BrandonGrotesque-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Black';
+    src: url('BrandonGrotesque-Black.eot');
+    src: url('BrandonGrotesque-Black.eot?#iefix') format('embedded-opentype'),
+        url('BrandonGrotesque-Black.woff') format('woff'),
+        url('BrandonGrotesque-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;

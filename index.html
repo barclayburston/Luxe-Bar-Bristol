@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+
 
 </head>
 
@@ -64,11 +67,33 @@
 
 
     <div class="hero">
-        <div class="hero-content">
-            <h1 class="title">get beautiful</h1>
-            <hr>
-            <p class="subtitle">Professional and affordable beauty services starting from as little as £5!</p>
-            <a href="prices.html" class="btn">EXPLORE&nbsp;<i class="fas fa-sm fa-arrow-right"></i></a>
+        <div class="hero-carousel">
+            <div class="slide1 slide">
+                <div class="container">
+                    <h1 class="title">feel<br><span>beautiful</span></h1>
+                    <hr>
+                    <p class="subtitle">Professional and affordable beauty services starting from as little as £5! Get in touch for a consultation!</p>
+                    <a href="prices.html" class="btn">EXPLORE&nbsp;<i class="fas fa-sm fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="slide2 slide">
+                <div class="container">
+                    <img class="carousel-img" src="img/hdbrow.jpg.png" />
+                    <h1 class="title">hd <br><span>brows</span></h1>
+                    <hr>
+                    <p class="subtitle">HD Brows is a bespoke eyebrow treatment that is totally tailored to you – not a brow stencil in sight!</p>
+                    <a href="prices.html" class="btn">GET BOOKED IN&nbsp;<i class="fas fa-sm fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="slide3 slide">
+                <div class="container">
+                    <img class="carousel-img" src="img/hdbrow.jpg.png" />
+                    <h1 class="title">our<br><span>aftercare</span></h1>
+                    <hr>
+                    <p class="subtitle">From eyelash extensions to spray tanning aftercare, find everything you need in one place!</p>
+                    <a href="prices.html" class="btn">AFTERCARE&nbsp;<i class="fas fa-sm fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -94,6 +119,21 @@
         </div>
     </div>
 
+    <div class="advert">
+        <div class="container">
+            <table style="cell-padding: 0;">
+                <tr>
+                    <td>
+                        <img src="img/hdbrow.jpg" />
+                    </td>
+                    <td>
+                        <h1 class="subtitle">HD Brows</h1>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
     <script>
@@ -105,7 +145,25 @@
         });
 
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.hero-carousel').slick({
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                dots: true,
+                adpativeHeight: true
+            });
+        });
 
+    </script>
+    <script>
+        $(window).on('resize', function() {
+            $('.carousel-img').height($('.slide2').height());
+        })
+
+    </script>
 </body>
 
 </html>

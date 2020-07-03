@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE BAR COPY</title>
+    <link rel="stylesheet" type="text/css" href="font/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+</head>
+
+<body class="pricelist">
+    <div id="mobile-menu">
+        <i class="fas fa-times fa-lg"></i>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lashes.html">Brows</a></li>
+            <li><a href="brows.html">Facials</a></li>
+            <li><a href="massage.html">Hands & Toes</a></li>
+            <li><a href="nails.html">Lashes</a></li>
+            <li><a href="facial.html">Massage</a></li>
+            <li><a href="tanning.html">Tanning</a></li>
+            <li><a href="waxing.html">Waxing</a></li>
+            <li><a href="prices.html">Price List</a></li>
+            <li><a href="thingstoknow.html">Things To Know</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header-info-container">
+                <a href="#">Get in touch</a>
+                <a href="#">Where to find us</a>
+            </div>
+            <div class="logo-container">
+                <i class="fas fa-bars fa-lg"></i>
+                <a href="index.html" class="logo">LUXE BAR</a>
+            </div>
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Treatments
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="brows.html">Brows</a>
+                        <a href="facial.html">Facials</a>
+                        <a href="nails.html">Hands & Toes</a>
+                        <a href="lashes.html">Lashes</a>
+                        <a href="massage.html">Massage</a>
+                        <a href="tanning.html">Tanning</a>
+                        <a href="waxing.html">Waxing</a>
+                    </div>
+                </div>
+                <a href="prices.html">Prices</a>
+                <a href="thingstoknow.html">Things to know</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="title">contact</h1>
+            <h2 class="subtitle">
+                Get in touch using the form below and we'll be in touch ASAP! You can also find our other details on this page.
+            </h2>
+        </div>
+    </div>
+    <section class="page-section">
+        <div class="container">
+            <form action="https://formspree.io/mqkydvgp" method="POST">
+                <input type="text" name="Name" placeholder="Name">
+                <br>
+                <input type="text" name="Email" placeholder="Email">
+                <br>
+                <input type="text" name="Subject" placeholder="Subject">
+                <br>
+                <textarea name="Message" placeholder="Your message"></textarea>
+
+                <!-- your other form fields go here -->
+
+                <button class="btn" type="submit">Submit</button>
+            </form>
+
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <script>
+        $(".fa-bars").click(function() {
+            $("#mobile-menu").addClass("open");
+        });
+        $(".fa-times").click(function() {
+            $("#mobile-menu").removeClass("open");
+        });
+
+    </script>
+
+</body>
+
+</html>

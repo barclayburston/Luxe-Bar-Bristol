@@ -12,31 +12,36 @@ html {
 
 .title {
     font-size: 3em;
-    line-height: 1.1em;
+    line-height: 1em;
     margin: 0;
-    color: rgba(0, 0, 0, 0.67);
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 2px;
+    color: #000;
+    font-family: 'BrandonGrotesque-Black';
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    display: inline;
+
+}
+
+.title span {
+    font-family: 'BrandonGrotesque-Black';
+    text-shadow: 6px 6px #ffb8b8;
 }
 
 .subtitle {
     font-size: 1em;
     line-height: 1.6em;
     margin: 0 0 50px 0;
-    color: rgba(0, 0, 0, 0.67);
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-style: italic;
+    color: #000;
+    letter-spacing: 1px;
 }
 
 .subsubtitle {
-    font-family: 'Playfair Display', serif;
     font-weight: normal;
     font-size: 2em;
     color: #f5d2d3;
     line-height: 60px;
     text-transform: lowercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.4px;
     margin: 20px 0 0 0;
 }
 
@@ -46,7 +51,7 @@ html {
 }
 
 table hr {
-    background: rgba(0, 0, 0, 0.37);
+    background: #000;
     border: none;
     height: 1px;
     width: 50px;
@@ -56,22 +61,21 @@ table hr {
 .btn {
     margin: 0;
     display: inline-block;
-    background: #f5d2d3;
+    background: #000;
     border: none;
-    border-radius: 4px;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.57);
+    color: #fff;
     transition: .1s ease-in-out;
     padding: 20px 0;
     width: 80%;
     text-transform: uppercase;
     font-size: 16px;
-    font-family: 'Averta-Bold', sans-serif;
-    letter-spacing: 1px;
+    font-family: 'BrandonGrotesque-Medium';
+    letter-spacing: 2px;
 }
 
 .btn:hover {
-    background-color: #e79396;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -152,7 +156,7 @@ body {
 
 .logo {
     font-size: 30px;
-    color: rgba(0, 0, 0, 0.67);
+    color: #000;
     text-decoration: none;
     letter-spacing: 3px;
 }
@@ -161,34 +165,103 @@ body {
     position: absolute;
     left: 30px;
     top: 30px;
-    color: rgba(0, 0, 0, 0.67);
+    color: #000;
 }
 
 .hero {
     width: 100%;
-    padding: 70px 0;
-    background-image: url(../img/hero_bg.png);
-    background-size: cover;
-    background-position: center;
     overflow: hidden;
 }
 
 .hero-content {
     z-index: 99;
     width: 100%;
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
+    padding: 90px 0;
+    background: red;
+    background-image: url(../img/hero_bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+}
+
+.hero-content h2 {
+    font-size: 1em;
+    margin: 20px auto 0 auto;
+    max-width: 600px;
+    width: 95%;
 }
 
 .hero hr {
     margin: 30px auto;
-    width: 200px;
+    width: 50px;
     border: none;
-    height: 1px;
-    background: rgba(0, 0, 0, 0.37);
+    height: 8px;
+    background: #000;
 }
 
+.hero-carousel {
+    width: 95%;
+    margin: 0 auto;
+}
 
+.slick-prev {
+    left: 13px !important;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 13px !important;
+    z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: rgba(0, 0, 0, 0.67) !important;
+}
+
+.slick-prev:before:hover,
+.slick-next:before:hover {
+    color: rgba(0, 0, 0, 1) !important;
+}
+
+.slide p {
+    margin: 0 auto 40px auto;
+    max-width: 80%;
+}
+
+.slide {
+    padding: 120px 0;
+}
+
+.slide1 {
+    background-image: url(../img/hero_bg.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.slide2 {
+    background-image: url(../img/slide2-bg-alt.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.slide3 {
+    background-image: url(../img/013%20Heavy%20Rain.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.carousel-img {
+    display: none !important;
+}
 
 .services {
     text-align: center;
@@ -222,28 +295,82 @@ body {
 
 .services img {
     width: 100%;
+    display: block;
 }
 
-section.thingstoknow ol li {
-    line-height: 29px;
+.advert table {
+    border-collapse: collapse;
+    overflow: hidden;
 }
 
-section.thingstoknow ol li,
-section.thingstoknow ol li a {
-    color: rgba(0, 0, 0, 0.67);
-}
-
-section.thingstoknow table {
+.advert img {
     width: 100%;
 }
 
-section.thingstoknow table td {
+.advert table td {
+    width: 50%;
+}
+
+.advert table td:nth-of-type(2) {
+    background: #2C3A47;
+}
+
+.advert h1 {
+    text-align: center;
+}
+
+section.page-section h1.subtitle {
+    width: 900px;
+    margin: 60px auto;
+}
+
+section.page-section table {
+    width: 100%;
+}
+
+section.page-section table td {
     width: 100%;
     float: left;
 }
 
-section.thingstoknow table td li {
+section.page-section table td li {
     line-height: 29px;
+}
+
+table.pricelist p {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.37);
+}
+
+table.pricelist h2 {
+    margin: 30px 0 0 0;
+}
+
+form {
+    width: 95%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 60px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.37);
+    font-size: 1.2em;
+    font-family: 'Averta-Bold';
+}
+
+input::placeholder,
+textarea::placeholder {}
+
+form .btn {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 728px) {
@@ -252,25 +379,13 @@ section.thingstoknow table td li {
     }
 
     .title {
-        font-size: 4em;
+        font-size: 6em;
         line-height: 1.1em;
-        margin: 0;
-        color: rgba(0, 0, 0, 0.67);
-        font-family: 'Playfair Display', serif;
-        letter-spacing: 2px;
-        background: rgb(2, 0, 36);
-        background: linear-gradient(180deg, rgba(2, 0, 36, 0) 64%, rgba(245, 210, 211, 1) 64%);
         display: inline;
     }
 
     .subtitle {
-        font-size: 1.6em;
-        line-height: 1.6em;
-        margin: 0 0 50px 0;
-        color: rgba(0, 0, 0, 0.67);
-        font-family: 'Playfair Display', serif;
-        font-weight: 400;
-        font-style: italic;
+        font-size: 1.1em;
     }
 
     .subsubtitle {
@@ -298,7 +413,6 @@ section.thingstoknow table td li {
     header {
         transition: .2s ease-in-out;
         padding: 5px 0 0 0;
-        border-top: 10px solid #f5d2d3;
     }
 
     .logo-container {
@@ -320,7 +434,7 @@ section.thingstoknow table td li {
     .header-info-container a {
         float: right;
         text-decoration: none;
-        color: rgba(0, 0, 0, 0.67);
+        color: #000;
         font-size: 14px;
         font-family: 'Averta-Bold';
         padding: 2px 8px;
@@ -342,7 +456,7 @@ section.thingstoknow table td li {
     .navbar a {
         float: left;
         font-size: 13px;
-        color: rgba(0, 0, 0, 0.67);
+        color: #000;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -361,7 +475,7 @@ section.thingstoknow table td li {
         font-size: 13px;
         border: none;
         outline: none;
-        color: rgba(0, 0, 0, 0.67);
+        color: #000;
         padding: 14px 16px;
         background-color: inherit;
         font-family: 'Averta-Bold';
@@ -394,7 +508,7 @@ section.thingstoknow table td li {
         display: block;
         text-align: left;
         font-size: 13px;
-        color: rgba(0, 0, 0, 0.67);
+        color: #000;
     }
 
     .dropdown:hover .dropdown-content {
@@ -403,11 +517,31 @@ section.thingstoknow table td li {
 
     .hero {
         width: 100%;
-        padding: 200px 0;
     }
 
-    .hero-content {
-        max-width: 600px;
+    .hero hr {
+        margin: 40px 0;
+    }
+
+    .slide p {
+        margin: 40px 0;
+        max-width: 50%;
+    }
+
+    .slide1,
+    .slide2,
+    .slide3 {
+        text-align: left;
+    }
+
+    .slide2 {
+        background-image: url(../img/slide2-bg-alt.png);
+    }
+
+    .carousel-img {
+        display: block !important;
+        float: right;
+        height: 454px;
     }
 
     .hero h1 {
@@ -430,23 +564,25 @@ section.thingstoknow table td li {
         float: left;
     }
 
+    .advert {
+        margin-top: 500px;
+    }
 
-
-    section.thingstoknow table {
+    section.page-section table {
         width: 100%;
     }
 
-    section.thingstoknow table td {
+    section.page-section table td {
         width: 48%;
         float: left;
     }
 
-    section.thingstoknow table td:nth-child(2) {
+    section.page-section table td:nth-child(2) {
         width: 48%;
         float: right;
     }
 
-    section.thingstoknow table span {
+    section.page-section table span {
         float: right;
     }
 
