@@ -1,48 +1,89 @@
 @font-face {
-    font-family: 'Averta-Bold';
-    src: local('Averta-Bold'),
-        url('Averta-Bold.woff') format('woff'),
-        url('Averta-Bold.ttf') format('truetype'),
-        url('Averta-Bold.svg#Averta-Bold') format('svg');
+    font-family: 'Audrey Italic';
+    src: url('Audrey-NormalOblique.eot');
+    src: url('Audrey-NormalOblique.eot?#iefix') format('embedded-opentype'),
+        url('Audrey-NormalOblique.woff2') format('woff2'),
+        url('Audrey-NormalOblique.woff') format('woff'),
+        url('Audrey-NormalOblique.ttf') format('truetype'),
+        url('Audrey-NormalOblique.svg#Audrey-NormalOblique') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Averta-Regular';
-    src: local('Averta-Regular'),
-        url('Averta-Regular.woff') format('woff'),
-        url('Averta-Regular.ttf') format('truetype'),
-        url('Averta-Regular.svg#Averta-Regular') format('svg');
+    font-family: 'Audrey';
+    src: url('Audrey-Normal.eot');
+    src: url('Audrey-Normal.eot?#iefix') format('embedded-opentype'),
+        url('Audrey-Normal.woff2') format('woff2'),
+        url('Audrey-Normal.woff') format('woff'),
+        url('Audrey-Normal.ttf') format('truetype'),
+        url('Audrey-Normal.svg#Audrey-Normal') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'BrandonGrotesque-Regular';
-    src: url('BrandonGrotesque-Regular.eot');
-    src: url('BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
-        url('BrandonGrotesque-Regular.woff') format('woff'),
-        url('BrandonGrotesque-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Audrey Med';
+    src: url('Audrey-Medium.eot');
+    src: url('Audrey-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Audrey-Medium.woff2') format('woff2'),
+        url('Audrey-Medium.woff') format('woff'),
+        url('Audrey-Medium.ttf') format('truetype'),
+        url('Audrey-Medium.svg#Audrey-Medium') format('svg');
+    font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'BrandonGrotesque-Medium';
-    src: url('BrandonGrotesque-Medium.eot');
-    src: url('BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
-        url('BrandonGrotesque-Medium.woff') format('woff'),
-        url('BrandonGrotesque-Medium.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Audrey Med Italic';
+    src: url('Audrey-MediumOblique.eot');
+    src: url('Audrey-MediumOblique.eot?#iefix') format('embedded-opentype'),
+        url('Audrey-MediumOblique.woff2') format('woff2'),
+        url('Audrey-MediumOblique.woff') format('woff'),
+        url('Audrey-MediumOblique.ttf') format('truetype'),
+        url('Audrey-MediumOblique.svg#Audrey-MediumOblique') format('svg');
+    font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'BrandonGrotesque-Black';
-    src: url('BrandonGrotesque-Black.eot');
-    src: url('BrandonGrotesque-Black.eot?#iefix') format('embedded-opentype'),
-        url('BrandonGrotesque-Black.woff') format('woff'),
-        url('BrandonGrotesque-Black.ttf') format('truetype');
+    font-family: 'Audrey Bold';
+    src: url('Audrey-Bold.eot');
+    src: url('Audrey-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Audrey-Bold.woff2') format('woff2'),
+        url('Audrey-Bold.woff') format('woff'),
+        url('Audrey-Bold.ttf') format('truetype'),
+        url('Audrey-Bold.svg#Audrey-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Audrey Bold Italic';
+    src: url('Audrey-BoldOblique.eot');
+    src: url('Audrey-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('Audrey-BoldOblique.woff2') format('woff2'),
+        url('Audrey-BoldOblique.woff') format('woff'),
+        url('Audrey-BoldOblique.ttf') format('truetype'),
+        url('Audrey-BoldOblique.svg#Audrey-BoldOblique') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Whitney-Book';
+    src: url('Whitney-Book.eot');
+    src: url('Whitney-Book.eot?#iefix') format('embedded-opentype'),
+        url('Whitney-Book.woff2') format('woff2'),
+        url('Whitney-Book.woff') format('woff'),
+        url('Whitney-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
+}

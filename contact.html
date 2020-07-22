@@ -17,79 +17,159 @@
         <i class="fas fa-times fa-lg"></i>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="lashes.html">Brows</a></li>
-            <li><a href="brows.html">Facials</a></li>
-            <li><a href="massage.html">Hands & Toes</a></li>
-            <li><a href="nails.html">Lashes</a></li>
-            <li><a href="facial.html">Massage</a></li>
-            <li><a href="tanning.html">Tanning</a></li>
-            <li><a href="waxing.html">Waxing</a></li>
             <li><a href="prices.html">Price List</a></li>
             <li><a href="thingstoknow.html">Things To Know</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
     <header>
-        <div class="container">
-            <div class="header-info-container">
-                <a href="#">Get in touch</a>
-                <a href="#">Where to find us</a>
-            </div>
-            <div class="logo-container">
+        <div class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="img/luxe_logo.png" /></a>
                 <i class="fas fa-bars fa-lg"></i>
-                <a href="index.html" class="logo">LUXE BAR</a>
-            </div>
-            <div class="navbar">
-                <a href="index.html">Home</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Treatments
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="brows.html">Brows</a>
-                        <a href="facial.html">Facials</a>
-                        <a href="nails.html">Hands & Toes</a>
-                        <a href="lashes.html">Lashes</a>
-                        <a href="massage.html">Massage</a>
-                        <a href="tanning.html">Tanning</a>
-                        <a href="waxing.html">Waxing</a>
-                    </div>
-                </div>
-                <a href="prices.html">Prices</a>
-                <a href="thingstoknow.html">Things to know</a>
-                <a href="contact.html">Contact</a>
+                <a href="#" class="btn">book now&nbsp;<i class="fas fa-sm fa-arrow-right"></i></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prices.html">Prices</a></li>
+                    <li><a href="thingstoknow.html">Things to know</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
             </div>
         </div>
     </header>
 
 
     <div class="hero">
-        <div class="hero-content">
-            <h1 class="title">contact</h1>
-            <h2 class="subtitle">
-                Get in touch using the form below and we'll be in touch ASAP! You can also find our other details on this page.
-            </h2>
-        </div>
+        <h1 class="title">contact</h1>
     </div>
     <section class="page-section">
         <div class="container">
-            <form action="https://formspree.io/mqkydvgp" method="POST">
-                <input type="text" name="Name" placeholder="Name">
+            <div class="half-column">
+                <p class="tiny-text">
+                    <span>Don't be a stranger</span><br>just say hello!
+                </p>
+                <a href="tel:01179678478" class="tele-num">0117 967 8478</a>
                 <br>
-                <input type="text" name="Email" placeholder="Email">
-                <br>
-                <input type="text" name="Subject" placeholder="Subject">
-                <br>
-                <textarea name="Message" placeholder="Your message"></textarea>
+                <a href="mailto:luxebar@outlook.com" class="tele-num">luxebar@outlook.com</a>
+                <br><br>
+                <p class="body-text">
+                    Luxe Bar
+                    <br>
+                    Style Creation Hair & Beauty Salon
+                    <br>
+                    Hanham
+                    <br>
+                    Bristol
+                    <br>
+                    BS15 3DQ
+                </p>
 
-                <!-- your other form fields go here -->
+                <p class="body-text">
+                    Monday: 09:00 - 18:00
+                    <br>
+                    Tuesday: 09:00 - 18:00
+                    <br>
+                    Wednesday: CLOSED
+                    <br>
+                    Thursday: 10:00 - 20:00
+                    <br>
+                    Friday: 09:00 - 18:00
+                    <br>
+                    Saturday: 08:00/09:00 - 17:00
+                    <br>
+                    Sunday: CLOSED
+                </p>
 
-                <button class="btn" type="submit">Submit</button>
-            </form>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.4921047033727!2d-2.5191437840616295!3d51.44912072278338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718f75041bfef9%3A0xb2b271756891a2fc!2sLuxe%20Bar%20Bristol!5e0!3m2!1sen!2suk!4v1595335540068!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+
+
+            </div>
+            <div class="half-column">
+                <p class="body-text">
+                    Do you have a question?
+                    <br>
+                    Drop us a message using the form below, we would love to hear from you!
+                </p>
+                <p class="tint-text">
+                    We hope to reply to everyone within 24 hours!
+                </p>
+                <form action="https://formspree.io/mqkydvgp" method="POST">
+                    <input type="text" name="Name" placeholder="Name">
+                    <br>
+                    <input type="text" name="Email" placeholder="Email">
+                    <br>
+                    <select id="cars" name="cars">
+                        <option value="" disabled selected>Select your treatment</option>
+                        <option value="Brows">Brows</option>
+                        <option value="Eyes">Eyes</option>
+                        <option value="Face">Face</option>
+                        <option value="HandsToes">Hands and Toes</option>
+                        <option value="Massage">Massage</option>
+                        <option value="Tanning">Tanning</option>
+                        <option value="Waxing">Waxing</option>
+                    </select>
+                    <br>
+                    <textarea name="Message" placeholder="Your message"></textarea>
+
+                    <button class="btn" type="submit">Submit</button>
+                </form>
+
+            </div>
 
         </div>
     </section>
+    <div class="footer">
+        <div class="container">
+            <div class="column">
+                <p class="body-text">
+                    Luxe Bar
+                    <br>
+                    Style Creation Hair & Beauty Salon
+                    <br>
+                    Hanham
+                    <br>
+                    Bristol
+                    <br>
+                    BS15 3DQ
+                    <br><br>
+                    luxebar@outlook.com
+                    <br>
+                    0117 967 8478
+                </p>
+            </div>
 
+            <div class="column">
+                <ul>
+                    <li><a href="index.html" class="body-text">Home</a></li>
+                    <li><a href="services.html" class="body-text">Services</a></li>
+                    <li><a href="prices.html" class="body-text">Price List</a></li>
+                    <li><a href="thingstoknow.html" class="body-text">Things To Know</a></li>
+                    <li><a href="contact.html" class="body-text">Contact</a></li>
+                </ul>
+
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="index.html" class="body-text">Instagram</a></li>
+                    <li><a href="services.html" class="body-text">Facebook</a></li>
+                    <li><a href="services.html" class="body-text">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="index.html" class="body-text">Terms</a></li>
+                    <li><a href="services.html" class="body-text">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="copyright-container">
+                <p class="body-text">© 2020 Luxe Bar</p>
+            </div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
     <script>
