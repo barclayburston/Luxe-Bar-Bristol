@@ -7,8 +7,10 @@
     <title>Luxe Bar | Luxury health and beauty services based in Bristol</title>
     <link rel="stylesheet" type="text/css" href="font/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/master.css">
 </head>
 
 <body>
@@ -16,8 +18,11 @@
         <i class="fas fa-times fa-lg"></i>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="prices.html">Price List</a></li>
-            <li><a href="thingstoknow.html">Things To Know</a></li>
+            <li><a href="treatments.html">Treatments</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="vouchers.html">Gift Vouchers</a></li>
+            <li><a href="thingstoknow.html">Things to know</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
@@ -26,11 +31,18 @@
             <div class="container">
                 <a href="index.html" class="logo"><img src="img/luxe_logo.png" /></a>
                 <i class="fas fa-bars fa-lg"></i>
-                <a href="contact.html" class="btn">book now&nbsp;<i class="fas fa-sm fa-arrow-right"></i></a>
+                <div class="socials hide-on-mobile">
+                    <a href="https://www.facebook.com/luxebarbristol/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/luxebar1/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                </div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="treatments.html">Treatments</a></li>
                     <li><a href="prices.html">Prices</a></li>
+                    <li><a href="vouchers.html">Gift Vouchers</a></li>
                     <li><a href="thingstoknow.html">Things to know</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
 
@@ -41,10 +53,120 @@
 
     <div class="hero">
         <div class="container">
-            <h1 class="title">Love yourself,<br>head to toe.</h1>
-            <h4>Professional and affordable beauty services.<br>Starting from just £5.</h4>
-            <a href="prices.html" class="btn">see prices&nbsp;<i class="fas fa-sm fa-arrow-right"></i></a>
-            <a href="contact.html" class="btn">book now&nbsp;<i class="fas fa-sm fa-arrow-right"></i></a>
+            <h1 class="supertitle"><span>Everyone</span> needs<br>a touch of luxury</h1>
+            <h4>We look forward to welcoming you to our warm and friendly salon based in Hanham, Bristol.</h4>
+            <a href="prices.html" class="btn">Treatments&nbsp;<i class="fas fa-sm fa-arrow-right"></i></a>
+            <a href="contact.html" class="btn">Book now&nbsp;<i class="fas fa-sm fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="section front-services">
+        <div class="container">
+            <div class="column-1-3">
+                <div class="card">
+                    <img src="img/lashes.png" />
+                    <h1 class="supertitle">
+                        Lash
+                    </h1>
+                    <p class="body-text">
+                        <span></span>
+                        We offer a wide variety of lengths, thickness and fluffiness for your every style!
+                    </p>
+                    <a href="treatments.html" class="btn">More info</a>
+                </div>
+            </div>
+            <div class="column-1-3">
+                <div class="card">
+                    <img src="img/nails.jpg" />
+                    <h1 class="supertitle">
+                        Nail
+                    </h1>
+                    <p class="body-text">
+                        A wide range of services are available from mini manicures to luxury pedicures!
+                    </p>
+                    <a href="treatments.html" class="btn">More info</a>
+                </div>
+            </div>
+            <div class="column-1-3">
+                <div class="card">
+                    <img src="img/wax.jpg" />
+                    <h1 class="supertitle">
+                        Wax
+                    </h1>
+                    <p class="body-text">
+                        Wether you're looking for a small wax or on a larger area, we've got you covered!
+                    </p>
+                    <a href="treatments.html" class="btn">More info</a>
+                </div>
+            </div>
+
+        </div>
+        <a href="treatments.html" class="btn"> See all treatments</a>
+    </div>
+
+    <div class="section gift-vouchers">
+        <div class="container">
+            <h1 class="supertitle">
+                Gift vouchers are now available!
+            </h1>
+            <a href="contact.html" class="btn">Enquire</a>
+        </div>
+    </div>
+
+    <div class="section front-about">
+        <div class="container">
+            <h1 class="supertitle">Hello,</h1>
+            <p class="body-text">
+                The driving force behind Luxe Bar is to help women feel beautiful, promoting great skincare, loving the body you are in and taking care of it! From lashes to waxing, there is nothing in your way to stop you feeling your best beautiful.<br><br>
+                Put life on pause, whether it’s for an express facial or an indulgent luxury treatment; a mini manicure or a luxurious full-body massage. We have treatments to suit every schedule, and we promise you’ll leave us feeling empowered, refreshed, and energised.
+                <br><br>
+                At our cosy salon, we offer not just appointments, but an experience. You can enjoy a prosecco or warming winter drink when you enter our candlelit relaxation area. We like to add a personal touch to each individual client, because we believe everyone deserves a touch of luxury.
+                <br><br>
+                We can’t wait to see you soon.
+            </p>
+            <div class="carousel">
+                <div>
+                    <p>
+                        "Love my lashes, Samantha is friendly, professional and really made me feel at ease! Can’t stop looking at my lashes and would defo recommend! Thank you so much!"
+                    </p>
+                    <p class="sig">
+                        -- Steph
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        " My shoulder and neck were hurting. Sam recommended a massage. She was amazing and her massage has really helped my pain. Sam is extremely professional, very knowledgeable, friendly and welcoming, she targeted my pain instantly and was fab. Thankyou X"
+                    </p>
+                    <p class="sig">
+                        -- Louise
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        "I had Russian Volume lashes done today with Sam, they are amazing. She is very professional & the Salon is so lovely. Thankyou Sam for an excellent service"
+                    </p>
+                    <p class="sig">
+                        -- Amanda
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        "Been having my lashes done by Sammi for 2 1/2 years now and couldn’t live without them. Lasts up to 3 weeks before needing infills.
+                        Friendly, professional service and value for money. Definitely recommend LUXE Hair and Beauty Bristol ❤️"
+                    </p>
+                    <p class="sig">
+                        -- Lindsey
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        "Had gel nail extensions done today by the lovely Sam and would highly recommend to anyone!! Such a lovely girl and love love love my nails they look so natural, thanks again!!💖"
+                    </p>
+                    <p class="sig">
+                        -- Emma
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -109,7 +231,15 @@
         });
 
     </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.carousel').slick({
+                autoplay: true
+            });
+        })
 
+    </script>
 </body>
 
 </html>
