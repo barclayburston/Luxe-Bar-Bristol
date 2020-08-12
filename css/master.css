@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -56,9 +56,14 @@ html {
     margin-top: 40px;
 }
 
+.warning {
+    color: red;
+}
+
 .body-text {
     font-size: 1.2em;
     line-height: 1.6em;
+    font-weight: bold;
 }
 
 .body-text b {
@@ -66,9 +71,10 @@ html {
 }
 
 .btn {
+    text-align: center;
     margin: 0;
     display: inline-block;
-    background: #fac1d9;
+    background: black;
     border: none;
     text-decoration: none;
     color: #fff;
@@ -169,10 +175,12 @@ header {
     top: 0;
     z-index: 100;
     padding: 20px 0;
+    background: white;
 }
 
 .navbar {
     width: 100%;
+    background: white;
 }
 
 .logo img {
@@ -209,8 +217,91 @@ header {
     clip-path: polygon(0 0, 1920px 0, 1920px 100%, 0 90%);
 }
 
+.brows .hero {
+    background-image: url(../img/brows_hero.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.lashes .hero {
+    background-image: url(../img/lashes_hero.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.facials .hero {
+    background-image: url(../img/facial_hero.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.nails .hero {
+    background-image: url(../img/nails_hero.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.massage .hero {
+    background-image: url(../img/massage_hero.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.tan .hero {
+    background-image: url(../img/tan_hero.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.wax .hero {
+    background-image: url(../img/wax_hero.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.about-nails ul li {
+    text-align: left;
+}
+
+.about {
+    text-align: center;
+}
+
+.about h1 {
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 60px;
+}
+
+.about .body-text {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.about img {
+    max-width: 500px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.hero .btn {
+    background: black;
+}
+
+.hero .btn:hover {
+    background: #333;
+}
+
 .hero h4 {
-    font-weight: normal;
+    font-weight: bold;
     line-height: 1.6em;
     margin: 50px 0 30px 0;
     font-size: 1.2em;
@@ -221,6 +312,12 @@ header {
     margin: 10px 0;
     width: 100%;
     text-align: center;
+}
+
+h1.warning {
+    font-size: 26px;
+    color: red;
+    line-height: 1.6;
 }
 
 .section {
@@ -306,11 +403,17 @@ header {
 }
 
 .carousel {
-    width: 90%;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.carousel {
     margin: 80px auto 0 auto;
     display: flex;
-    background: #fac1d9;
+    background: #ffd1dc;
     padding-bottom: 30px;
+    overflow: hidden;
 }
 
 .carousel div {
@@ -320,8 +423,7 @@ header {
 }
 
 .carousel p {
-    max-width: 800px;
-    width: 90%;
+    width: 100%;
     font-size: 1.8em;
     font-family: 'Amiri', sans-serif;
 }
@@ -540,6 +642,11 @@ form button {
         font-size: 1em;
     }
 
+    .btn {
+        max-width: 300px;
+        margin-top: 40px;
+    }
+
     .hide-on-mobile {
         display: block;
     }
@@ -554,55 +661,97 @@ form button {
 
     header {
         transition: .2s ease-in-out;
-    }
-
-    .logo {
-        font-size: 30px;
-        color: #000;
-        text-decoration: none;
-        letter-spacing: 3px;
-        float: left;
+        padding: 0;
     }
 
     .logo img {
         position: relative;
-        top: 7px;
-    }
-
-    .nav-links {
-        display: inline-block;
-        text-align: center;
-        list-style: none;
-        padding: 0;
-        transition: .1s all;
-    }
-
-    .nav-links li {
-        display: inline;
+        left: 0;
+        transform: none;
+        height: 70px;
         float: left;
-        margin: 0 10px;
-        transition: .1s all;
+        margin-right: 40px;
+        margin-top: -7px;
     }
 
-    .nav-links li a {
-        display: block;
-        text-decoration: none;
-        color: rgba(0, 0, 0, 0.67);
-        text-transform: uppercase;
+    /* Navbar container */
+    .navbar {
+        padding: 0;
+        margin: 0;
+        height: 90px;
+        overflow: hidden;
+        background-color: transparent;
+    }
+
+    /* Links inside the navbar */
+    .navbar a.link {
+        float: right;
         font-size: 13px;
-        font-family: 'Raleway', sans-serif;
-        padding: 5px;
-        transition: .1s all;
+        color: black;
+        padding: 0;
+        text-decoration: none;
+        padding: 4px;
+        margin: 32px 10px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
     }
 
-    .nav-links:hover li a {
-        color: rgba(0, 0, 0, 0.3);
-        transition: .1s all;
+    /* The dropdown container */
+    .dropdown {
+        float: right;
+        overflow: hidden;
     }
 
-    .nav-links li a:hover {
-        color: rgba(0, 0, 0, 1);
-        transition: .1s all;
+    /* Dropdown button */
+    .dropdown .dropbtn {
+        float: right;
+        font-size: 13px;
+        color: black;
+        padding: 0;
+        text-decoration: none;
+        padding: 4px;
+        margin: 32px 10px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        color: #fac1d9;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 80px;
+        background-color: white;
+        min-width: 190px;
+        z-index: 1;
+
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        font-size: 13px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+    }
+
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 
     .fa-bars {
@@ -612,7 +761,8 @@ form button {
     .socials {
         float: right;
         padding: 3px;
-        margin-top: 10px;
+        margin-top: 27px;
+        margin-left: 30px;
         text-decoration: none;
         color: rgba(0, 0, 0, 0.67);
     }
@@ -648,6 +798,10 @@ form button {
     .hero .btn {
         margin: 10px 0;
         width: 200px;
+    }
+
+    .about .btn2 {
+        margin-left: 20px;
     }
 
     .pricelist .hero,
