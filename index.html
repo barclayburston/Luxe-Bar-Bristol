@@ -15,10 +15,22 @@
 
 <body>
     <div id="mobile-menu">
-        <i class="fas fa-times fa-lg"></i>
+        <i class="fas fa-times fa-lg">&nbsp;&nbsp;<span>Close</span></i>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="treatments.html">Treatments</a></li>
+            <li class="open-sub"><a href="#">Treatments</a></li>
+            <div class="mobile-submenu" id="mobile-submenu">
+                <i class="fas fa-long-arrow-alt-left fa-lg">&nbsp;&nbsp;<span>Back</span></i>
+                <ul>
+                    <li><a href="brows.html">Brows</a></li>
+                    <li><a href="facials.html">Facials</a></li>
+                    <li><a href="eyes.html">Lashes</a></li>
+                    <li><a href="massage.html">Massage</a></li>
+                    <li><a href="nails.html">Nails</a></li>
+                    <li><a href="tan.html">Tanning</a></li>
+                    <li><a href="wax.html">Waxing</a></li>
+                </ul>
+            </div>
             <li><a href="prices.html">Prices</a></li>
             <li><a href="thingstoknow.html">Things to know</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -120,7 +132,7 @@
         </div>
     </div>
 
-    <div class="section front-about">
+    <div class="section front-about" style="margin-bottom:90px;">
         <div class="container">
             <h1 class="supertitle">Hello,</h1>
             <p class="body-text">
@@ -129,7 +141,7 @@
                 <br><br>
                 At our cosy salon, we offer not just appointments, but an experience. You can enjoy a prosecco or warming winter drink when you enter our candlelit relaxation area. We like to add a personal touch to each individual client, because we believe everyone deserves a touch of luxury.
                 <br><br>
-                We can’t wait to see you soon.
+                We can’t wait to see you soon!
             </p>
             <div class="carousel">
                 <div>
@@ -177,7 +189,15 @@
         </div>
     </div>
 
-
+    <div class="container" style="text-align: center">
+        <a href="https://www.instagram.com/luxebar1/" class="supertitle">Instagram</a>
+        <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
+        <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+        <div class="juicer-cont">
+            <ul class="juicer-feed" data-feed-id="luxebar1">
+            </ul>
+        </div>
+    </div>
 
     <div class="footer">
         <div class="container">
@@ -235,6 +255,12 @@
         });
         $(".fa-times").click(function() {
             $("#mobile-menu").removeClass("open");
+        });
+        $(".open-sub").click(function() {
+            $("#mobile-submenu").addClass("open");
+        });
+        $(".fa-long-arrow-alt-left").click(function() {
+            $("#mobile-submenu").removeClass("open");
         });
 
     </script>

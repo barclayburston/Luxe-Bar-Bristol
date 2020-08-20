@@ -63,7 +63,6 @@ html {
 .body-text {
     font-size: 1.2em;
     line-height: 1.6em;
-    font-weight: bold;
 }
 
 .body-text b {
@@ -72,7 +71,7 @@ html {
 
 .btn {
     text-align: center;
-    margin: 0;
+    margin: 3px 0;
     display: inline-block;
     background: black;
     border: none;
@@ -97,6 +96,38 @@ hr {
     height: 3px;
     border: none;
     background: #fb9ec4;
+}
+
+.juicer-feed h1.referral a {
+    display: none !important;
+}
+
+.juicer-feed {
+    max-height: 1000px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 50px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 50px;
 }
 
 body {
@@ -133,7 +164,8 @@ body {
     left: 0;
 }
 
-.fa-times {
+.fa-times,
+.fa-long-arrow-alt-left {
     position: absolute;
     left: 30px;
     top: 30px;
@@ -165,6 +197,40 @@ body {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
+#mobile-submenu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background: #4b4d4e;
+    transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobile-submenu.open {
+    left: 0;
+}
+
+#mobile-submenu li {
+    width: 100%;
+}
+
+#mobile-submenu li a {
+    display: block;
+    padding: 13px 9px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    overflow-x: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -175,7 +241,7 @@ header {
     top: 0;
     z-index: 100;
     padding: 20px 0;
-    background: white;
+    background: transparent;
 }
 
 .navbar {
@@ -188,7 +254,7 @@ header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 30px;
+    top: 25px;
 }
 
 .nav-links {
@@ -217,47 +283,7 @@ header {
     clip-path: polygon(0 0, 1920px 0, 1920px 100%, 0 90%);
 }
 
-.brows .hero {
-    background-image: url(../img/brows_hero.png);
-    background-size: cover;
-    background-position: right;
-}
 
-.lashes .hero {
-    background-image: url(../img/lashes_hero.png);
-    background-size: cover;
-    background-position: right;
-}
-
-.facials .hero {
-    background-image: url(../img/facial_hero.png);
-    background-size: cover;
-    background-position: right;
-}
-
-.nails .hero {
-    background-image: url(../img/nails_hero.png);
-    background-size: cover;
-    background-position: right;
-}
-
-.massage .hero {
-    background-image: url(../img/massage_hero.png);
-    background-size: cover;
-    background-position: right;
-}
-
-.tan .hero {
-    background-image: url(../img/tan_hero.png);
-    background-size: cover;
-    background-position: right;
-}
-
-.wax .hero {
-    background-image: url(../img/wax_hero.png);
-    background-size: cover;
-    background-position: right;
-}
 
 .about-nails ul li {
     text-align: left;
@@ -282,6 +308,7 @@ header {
 }
 
 .about img {
+    width: 100%;
     max-width: 500px;
 }
 
@@ -487,6 +514,10 @@ table.pricelist-mobile td:nth-child(1) {
 table.pricelist-mobile td:nth-child(2) {
     width: 20%;
     text-align: right;
+}
+
+.pricelist .body-text {
+    font-size: 16px;
 }
 
 .page-section .half-column {
@@ -798,6 +829,48 @@ form button {
     .hero .btn {
         margin: 10px 0;
         width: 200px;
+    }
+
+    .brows .hero {
+        background-image: url(../img/brows_hero.png);
+        background-size: cover;
+        background-position: right;
+    }
+
+    .lashes .hero {
+        background-image: url(../img/lashes_hero.png);
+        background-size: cover;
+        background-position: right;
+    }
+
+    .facials .hero {
+        background-image: url(../img/facial_hero.png);
+        background-size: cover;
+        background-position: right;
+    }
+
+    .nails .hero {
+        background-image: url(../img/nails_hero.png);
+        background-size: cover;
+        background-position: right;
+    }
+
+    .massage .hero {
+        background-image: url(../img/massage_hero.png);
+        background-size: cover;
+        background-position: right;
+    }
+
+    .tan .hero {
+        background-image: url(../img/tan_hero.png);
+        background-size: cover;
+        background-position: right;
+    }
+
+    .wax .hero {
+        background-image: url(../img/wax_hero.png);
+        background-size: cover;
+        background-position: right;
     }
 
     .about .btn2 {

@@ -13,11 +13,23 @@
 </head>
 
 <body class="thingstoknow">
-    <div id="mobile-menu">
-        <i class="fas fa-times fa-lg"></i>
+ <div id="mobile-menu">
+        <i class="fas fa-times fa-lg">&nbsp;&nbsp;<span>Close</span></i>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="treatments.html">Treatments</a></li>
+            <li class="open-sub"><a href="#">Treatments</a></li>
+            <div class="mobile-submenu" id="mobile-submenu">
+                <i class="fas fa-long-arrow-alt-left fa-lg">&nbsp;&nbsp;<span>Back</span></i>
+                <ul>
+                    <li><a href="brows.html">Brows</a></li>
+                    <li><a href="facials.html">Facials</a></li>
+                    <li><a href="eyes.html">Lashes</a></li>
+                    <li><a href="massage.html">Massage</a></li>
+                    <li><a href="nails.html">Nails</a></li>
+                    <li><a href="tan.html">Tanning</a></li>
+                    <li><a href="wax.html">Waxing</a></li>
+                </ul>
+            </div>
             <li><a href="prices.html">Prices</a></li>
             <li><a href="thingstoknow.html">Things to know</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -28,28 +40,30 @@
             <div class="container">
                 <a href="index.html" class="logo"><img src="img/luxe_logo.png" /></a>
                 <i class="fas fa-bars fa-lg"></i>
-                <div class="socials hide-on-mobile">
-                    <a href="https://www.facebook.com/luxebarbristol/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/luxebar1/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-                <a href="prices.html" class="link">Contact</a>
-                <a href="prices.html" class="link">Prices</a>
-                <a href="prices.html" class="link">Things to know</a>
-                <div class="dropdown">
-                    <button class="dropbtn link">Treatments
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="brows.html">Brows</a>
-                        <a href="facials.html">Facials</a>
-                        <a href="eyes.html">Lashes</a>
-                        <a href="massage.html">Massage</a>
-                        <a href="nails.html">Nails</a>
-                        <a href="tan.html">Tanning</a>
-                        <a href="wax.html">Waxing</a>
+                <div class="hide-on-mobile">
+                    <div class="socials hide-on-mobile">
+                        <a href="https://www.facebook.com/luxebarbristol/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/luxebar1/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
+                    <a href="prices.html" class="link">Contact</a>
+                    <a href="prices.html" class="link">Prices</a>
+                    <a href="prices.html" class="link">Things to know</a>
+                    <div class="dropdown">
+                        <button class="dropbtn link">Treatments
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="brows.html">Brows</a>
+                            <a href="facials.html">Facials</a>
+                            <a href="eyes.html">Lashes</a>
+                            <a href="massage.html">Massage</a>
+                            <a href="nails.html">Nails</a>
+                            <a href="tan.html">Tanning</a>
+                            <a href="wax.html">Waxing</a>
+                        </div>
+                    </div>
+                    <a href="index.html" class="link">Home</a>
                 </div>
-                <a href="index.html" class="link">Home</a>
             </div>
         </div>
     </header>
@@ -386,6 +400,12 @@
         });
         $(".fa-times").click(function() {
             $("#mobile-menu").removeClass("open");
+        });
+        $(".open-sub").click(function() {
+            $("#mobile-submenu").addClass("open");
+        });
+        $(".fa-long-arrow-alt-left").click(function() {
+            $("#mobile-submenu").removeClass("open");
         });
 
     </script>
