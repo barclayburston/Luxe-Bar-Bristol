@@ -247,6 +247,10 @@
             </div>
         </div>
     </div>
+    <div id="myCookieConsent">
+        <a id="cookieButton">Understood</a>
+        <div>This&nbsp;website is&nbsp;using&nbsp;cookies. <a href="https://html-online.com/privacy-terms-and-conditions/">More&nbsp;details</a></div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
     <script>
@@ -270,6 +274,16 @@
             $('.carousel').slick({
                 autoplay: true
             });
+        })
+
+    </script>
+    <script>
+        if (localStorage.getItem(‘cookieSeen’) != ‘shown’) {
+            $(‘.cookiebanner’).delay(2000).fadeIn();
+            localStorage.setItem(‘cookieSeen’, ’shown’)
+        };
+        $(‘.close’).click(function() {
+            $(‘.cookiebanner’).fadeOut();
         })
 
     </script>
