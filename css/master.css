@@ -321,6 +321,8 @@ header {
 
 .hero .btn {
     background: black;
+    max-width: 300px;
+    width: 100%;
 }
 
 .hero .btn:hover {
@@ -333,6 +335,11 @@ header {
     margin: 50px 0 30px 0;
     font-size: 1.2em;
     max-width: 500px;
+    margin: 30px auto 50px auto;
+}
+
+.hero p {
+    margin: 40px auto;
 }
 
 .hero .btn {
@@ -652,7 +659,7 @@ form button {
     text-align: center;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
     body {
         background: #fff;
     }
@@ -835,10 +842,20 @@ form button {
         text-align: center;
     }
 
+    .hero h4 {
+        margin: 40px 0;
+    }
+
     .hero .btn {
         margin: 10px 0;
         width: 200px;
     }
+
+    .hero p {
+        margin: 40px 0;
+    }
+
+
 
     .brows .hero {
         background-image: url(../img/brows_hero.png);
@@ -1040,13 +1057,6 @@ form button {
     .footer .copyright-container {
         width: 100%;
 
-    }
-}
-
-@media screen and (min-width: 767px) and (max-width: 1300px) {
-    .card .body-text {
-        font-size: 1.2em;
-        width: 150px;
     }
 }
 
